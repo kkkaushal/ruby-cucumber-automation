@@ -3,8 +3,8 @@ It captures evolution of automation scripts from simple line by line Ruby instru
     . Instance Variable concept
     . DSL (Domain Specific Language)
     . Methods sharing using 'module'
-    . Class/object
     . 'Cucumber' and 'Gherkin' implementation (along with testgen, bundler)
+    . Class/object
     . Metaprogramming (kind of) using 'PageObject'
     . Extending Cucumber by using 'PageFactory'
     . Data separation using 'DataMagic'
