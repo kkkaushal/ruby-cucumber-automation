@@ -4,13 +4,13 @@ It captures evolution of automation scripts from simple line by line Ruby instru
     . DSL (Domain Specific Language)
     . Methods sharing using 'module'
     . Class/object
-    . 'Cucumber' and 'Gherkin'
+    . 'Cucumber' and 'Gherkin' implementation (along with testgen, bundler)
     . Metaprogramming (kind of) using 'PageObject'
     . Extending Cucumber by using 'PageFactory'
     . Data separation using 'DataMagic'
     . Routes concept using 'PageFactory'
     . Environment Configuration using 'FigNewton'
-    . Environment Configuration using 'Rake
+    . Environment Configuration using 'Rake'
     . Reporting test results using 'Cucumber HTML Formatter'
     . Saving screenshot of issues using 'PageObject save_screenshot()'
     . Browser Selection using 'RDee'
