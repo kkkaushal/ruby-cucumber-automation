@@ -1,6 +1,6 @@
 Now we are going to do some major change to our scripts.
 
-* We will use gem 'testgen' to genrate cucmber project directory structure
+* We will use gem 'testgen' to genrate cucumber project directory structure
    % gem install 'testgen'
    % testgen project "v6_buying_backpack"
       create  v6_buying_backpack
