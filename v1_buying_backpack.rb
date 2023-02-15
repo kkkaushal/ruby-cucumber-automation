@@ -26,12 +26,11 @@ browser.text_field(id: 'first-name').set('turiyam')
 browser.text_field(id: 'last-name').set('krishna')
 browser.text_field(id: 'postal-code').set('78759')
 browser.button(id: 'continue').click
-sleep 1
 
 # Complete checkout:
 browser.button(id: 'finish').click
 puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').child.text == 'THANK YOU FOR YOUR ORDER'}"
-sleep 1
+sleep 1 # It's not really needed but added to look at the last page.
 
 # Lets say, you want to buy another backpack. For that you repeat same steps:
 # Navigate to saucedemo.com
@@ -56,7 +55,6 @@ browser.text_field(id: 'first-name').set('turiyam')
 browser.text_field(id: 'last-name').set('krishna')
 browser.text_field(id: 'postal-code').set('78759')
 browser.button(id: 'continue').click
-sleep 1
 
 # Complete checkout:
 browser.button(id: 'finish').click
