@@ -16,3 +16,5 @@ It captures evolution of automation scripts from simple line by line Ruby instru
     . Browser Selection using 'RDee'
     . Grid (selenium) using 'selenium-webdriver'
 
+AUT is https://saucedemo.com
+
