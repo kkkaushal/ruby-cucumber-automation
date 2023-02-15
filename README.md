@@ -1,20 +1,20 @@
-It captures evolution of automation scripts from simple line by line Ruby instructions to a quite sophisticated BDD (Behavior Driven Development) script using/applying
-    . Dry coding
-    . Instance Variable concept
-    . DSL (Domain Specific Language)
-    . Methods sharing using 'module'
-    . 'Cucumber' and 'Gherkin' implementation (along with testgen, bundler)
-    . Class/object
-    . Metaprogramming (kind of) using 'PageObject'
-    . Extending Cucumber by using 'PageFactory'
-    . Data separation using 'DataMagic'
-    . Routes concept using 'PageFactory'
-    . Environment Configuration using 'FigNewton'
-    . Environment Configuration using 'Rake'
-    . Reporting test results using 'Cucumber HTML Formatter'
-    . Saving screenshot of issues using 'PageObject save_screenshot()'
-    . Browser Selection using 'RDee'
-    . Grid (selenium) using 'selenium-webdriver'
+It captures evolution of automation scripts from simple line by line Ruby instructions to a quite sophisticated 
+BDD (Behavior Driven Development) script using/applying-
 
-AUT is https://saucedemo.com
-
+    . Initial line by line simple code [v1]
+    . Dry coding [v2]
+    . Instance Variable concept [v3]
+    . DSL (Domain Specific Language) [v4]
+    . Methods sharing using 'module' [v5]
+    . 'Cucumber' and 'Gherkin' implementation (along with testgen, bundler) [v6]
+    . Class/object [v7]
+    . Metaprogramming (kind of) using 'PageObject' [v8]
+    . Extending Cucumber by using 'PageFactory' [v9]
+    . Data separation using 'DataMagic' [v10]
+    . Routes concept using 'PageFactory' [v11]
+    . Environment Configuration using 'FigNewton' [v12]
+    . Environment Configuration using 'Rake' [v13]
+    . Reporting test results using 'Cucumber HTML Formatter' [v14]
+    . Saving screenshot of issues using 'PageObject save_screenshot()' [v15]
+    . Browser Selection using 'RDee'[v16]
+    . Grid (selenium) using 'selenium-webdriver' [v16]
