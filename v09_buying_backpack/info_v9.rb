@@ -1,7 +1,7 @@
 >>> info_v9: 
    Extend Cucumber.
-   * include PageFactory - add this in class in *page.rb file
-   * Use visit() and on() methods
+   * include PageFactory - add this in class in *page.rb file.
+   * Use visit() and on() methods.
    * 'page_ur <url>' declaration helps automatically create .goto(url) method when object is created.
 
 >>> info_v8: 
