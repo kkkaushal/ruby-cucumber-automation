@@ -1,5 +1,3 @@
-# require "/Users/<name>/v6_buying_backpack/features/support/pages/shopping_helper_page.rb" # when ShoppingHelper module file in in 'features/support/pages/shopping_helper_page.rb'
-require '/Users/<name>/v7_buying_backpack/features/support/pages/shopping_helper_page'
 
 Given('I am logged in saucedemo shopping website') do
   @helper = ShoppingHelper.new(@browser)

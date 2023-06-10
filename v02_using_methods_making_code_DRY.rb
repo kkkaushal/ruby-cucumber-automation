@@ -30,7 +30,7 @@ end
 
 def method5(browser)
     browser.button(id: 'finish').click
-    puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').child.text == 'THANK YOU FOR YOUR ORDER'}"   
+    puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').h2(class: "complete-header").text == 'Thank you for your order!'}" 
 end
 
 

@@ -46,7 +46,7 @@ class ShoppingHelper
 
     def complete_checkout_successfully
         self.finish
-        fail unless @browser.div(id: 'checkout_complete_container').child.text == 'THANK YOU FOR YOUR ORDER'
+        fail unless @browser.div(id: 'checkout_complete_container').h2(class: "complete-header").text == 'Thank you for your order!'
     end
 
 end

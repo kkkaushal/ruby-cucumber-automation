@@ -29,7 +29,7 @@ browser.button(id: 'continue').click
 
 # Complete checkout:
 browser.button(id: 'finish').click
-puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').child.text == 'THANK YOU FOR YOUR ORDER'}"
+puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').h2(class: "complete-header").text == 'Thank you for your order!'}"
 sleep 1 # It's not really needed but added to look at the last page.
 
 # Lets say, you want to buy another backpack. For that you repeat same steps:
@@ -58,5 +58,5 @@ browser.button(id: 'continue').click
 
 # Complete checkout:
 browser.button(id: 'finish').click
-puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').child.text == 'THANK YOU FOR YOUR ORDER'}"
+puts "Is the cbackpack order placed?: #{browser.div(id: 'checkout_complete_container').h2(class: "complete-header").text == 'Thank you for your order!'}"
 sleep 1

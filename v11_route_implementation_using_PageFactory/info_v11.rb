@@ -1,6 +1,11 @@
->>> info_v11: 
-    
->>> info_v10:
+>>> info_v11.txt: 
+    * gem 'require_all'| features/support/routes.rb(require 'require_all', require_rel 'pages') | navigate_all | navigate_to | continue_navigation_to
+        PageObject::PageFactory.routes = {
+        default: [[LoginPage, :login], [ProductPage, :add_to_cart], [ProductPage, :goto_cart_page], [CartPage, :goto_checkout_info_page],
+                    [CheckoutInfoPage, :checkout], [CheckoutOverviewPage, :complete_checkout]]
+        }
+
+>>> info_v10.txt:
     DataMagic.yml_directory = 'config/data' # (default is also 'config/data') To inform the gem where it can find the yaml data files.
     DataMagic.load('checkout_info.yml') #  To inform the gem to use another file than 'default.yml'.
     DataMagic.load_for_scenario(scenario) # In 'hooks.rb' file 'Before' block.
@@ -93,28 +98,33 @@
 
     hash2 = hash1.merge('one' => 1.0)
     puts hash2
+ 
+>>> info_v9.txt: 
+   Extend Cucumber.
+   * include PageFactory - add this in the class in the *page.rb file(s).
+   * Use visit() and on() methods.
+   * 'page_ur <url>' declaration helps automatically create .goto(url) method when object is created.
 
->>> info_v9: 
-    Extend Cucumber.
-    * include PageFactory - add this in class in *page.rb file.
-    * Use visit() and on() methods.
-    * 'page_ur <url>' declaration helps automatically create .goto(url) method when object is created.
- 
- >>> info_v8: 
-    Implement PageObject:
-    * gem 'page-object' - add this in Gemfile
-    * require 'page-object' - add this in env.rb
-    * include PageObject - add this in class in *page.rb file
- 
-    * With PageObject implemented two things to note here for time being-
-      a. No need to initialize class, PageObject does it for us.
-      b. Metaprogramming - we need to just declare elements and upon calling the PageObject creates methods for us.
-    
- >>> info_v7: 
-    Class-Object implementation
-    Put all the definitions in 'module' into a class and add an initialize method.
-    
-    
+>>> info_v8: 
+   Implement PageObject:
+   * gem 'page-object' - add this in Gemfile
+   * require 'page-object' - add this in env.rb
+   * include PageObject - add this in the class in the *page.rb file(s).
+
+   * With PageObject implemented two things to note here for time being-
+     a. No need to initialize class, PageObject does it for us.
+     b. Metaprogramming - we need to just declare elements and upon calling the PageObject creates methods for us.
+   
+>>> info_v7.txt: 
+   Class-Object implementation
+   . Put all the definitions in 'module' into a class and add an initialize method.
+      def initialize(browser)
+         @browser = browser
+      end
+   . 'require "Users/<>/v6_buying_backpack/support/pages/shopping_helper_page"' or 'require_relative shopping_helper_page' is not needed as when Cucumber starts,
+     it creates a class name 'World', loads all the files in directories under 'features' directory.
+   . "shopping_helper_page.rb" is usually put in pages directory but it can also be put in 'features' directory or in any any directories under 'feature'
+
  >>> info_v6:
     Now we are going to do some major change to our scripts.
  
