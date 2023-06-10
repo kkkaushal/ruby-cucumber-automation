@@ -1,0 +1,8 @@
+login:
+  username: standard_user
+  userpassword: secret_sauce
+
+checkout_info:
+  firstname: Ryan
+  lastname: Ford
+  postalcode: 78759
