@@ -1,0 +1,3 @@
+default:  FIG_NEWTON_FILE=saucedemo1.yml --no-source --color --format pretty --publish-quiet
+demo1env: FIG_NEWTON_FILE=saucedemo1.yml --no-source --color --format pretty --publish-quiet
+demo2env: FIG_NEWTON_FILE=saucedemo2.yml --no-source --color --format pretty --publish-quiet

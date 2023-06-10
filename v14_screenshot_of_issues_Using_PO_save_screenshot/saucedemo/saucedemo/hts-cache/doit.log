@@ -1,0 +1,8 @@
+https://www.saucedemo.com/ https://www.saucedemo.com/inventory.html https://www.saucedemo.com/cart.html https://www.saucedemo.com/checkout-step-one.html https://www.saucedemo.com/checkout-step-two.html https://www.saucedemo.com/checkout-complete.htm -O "saucedemo/saucedemo" -%v -*img_*.zip
+File generated automatically on Mon, 06 Feb 2023 14:20:49, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

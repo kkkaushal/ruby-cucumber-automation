@@ -1,0 +1,15 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+# Cucumber::Rake::Task.new(:features) do |t|
+#   t.profile = 'default'
+# end
+
+# task :default => :features
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "features --no-source --color --format pretty --publish-quiet"
+end
+
+task :default => :features

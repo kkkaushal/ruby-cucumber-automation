@@ -1,0 +1,3 @@
+default:  FIG_NEWTON_FILE=saucedemo1.yml --no-source --color --format pretty --publish-quiet
+watir:    FIG_NEWTON_FILE=saucedemo1.yml --no-source --color --format pretty --publish-quiet --tags @watir
+selenium: FIG_NEWTON_FILE=saucedemo2.yml --no-source --color --format pretty --publish-quiet --tags @selenium
